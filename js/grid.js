@@ -1,0 +1,1 @@
+function openGallery(e){closeAll();let l=document.getElementById("gallery-"+e),a=document.getElementById("card-"+e);l.classList.add("Gallery--active"),a.classList.add("Card--active")}function closeAll(){let e=document.querySelector(".Gallery--active"),l=document.querySelector(".Card--active");e&&e.classList.remove("Gallery--active"),l&&l.classList.remove("Card--active")}

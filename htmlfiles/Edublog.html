@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Useful articles for Sri Lankan A/L and O/L students... ">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>Lankanblog - Edublog</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/dist/css/bootstrap.min.css.map" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+
+    <style>
+      .end
+{
+    display: flex;
+}
+
+.footerboxes
+{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 5px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    overflow: visible;
+    text-decoration: none !important;
+
+}
+.footerlicenter
+{
+  text-align: center;
+  display: block;
+  margin: auto;
+  text-decoration: none !important;
+  color: #ffffff;
+}
+.footlink
+{
+  text-decoration: none;
+  color: white;
+}
+.footlink:hover
+{
+  color: gray;
+}
+.footerul
+{
+  text-align: center !important;
+    display: block;
+    list-style-type: none;
+    width: 90%;
+    height: fit-content;
+    padding: 0px 20px;
+    margin: 0px auto;
+}
+
+@media only screen and (max-width:1114px) {
+  .footerboxes
+{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 5px 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+    overflow: visible;
+    margin:0px !important;
+
+}
+
+.footerboxelogo
+{
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    width: 90%;
+    padding-top: 10px;
+    height: 50px   !important;
+    margin-top: 10px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerul
+{
+    display: block;
+    list-style-type: none;
+    width: 90%;
+    height: 100px !important;
+    padding: 0px 0px;
+    margin: 15px !important;
+    text-align: center !important;
+}
+  
+}
+@media only screen and (max-width:676px) {
+  .end{
+    display: block;
+  }
+  .footerboxes
+{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+    overflow: visible;
+    margin: 0px;
+
+}
+
+.footerboxelogo
+{
+    display: flex;
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    width: 90%;
+    height: fit-content;
+    margin-top: 60px;
+}
+
+.footerul
+{
+    display: block;
+    list-style-type: none;
+    width: 90%;
+    height: fit-content;
+    padding: 0px;
+    margin: 0px;
+}
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .hehe{
+        margin-top: 16px;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      #cookiePopup {
+  background-color: #222222;
+  position: fixed;
+  font-size: 14px;
+  width: 400px;
+  max-width: 42.85em;
+  box-shadow: 0 0 2em rgba(53, 53, 54, 0.15);
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 10px !important;
+  padding-bottom: 30px !important;
+  border-radius: 6px;
+  transition: all 0.4s ease-in;
+  z-index: 100;
+}
+#cookiePopup p {
+  text-align: center;
+  margin: 1.4em 0;
+}
+#cookiePopup button {
+  background-color: #6859fe;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+.cookieHeading {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+#cookiePopup a {
+  color: #6859fe;
+}
+.hide {
+  visibility: hidden;
+  bottom: 0;
+  right: 2em;
+}
+.show {
+  visibility: visible;
+  bottom: 2em;
+  right: 2em;
+}
+.acceptButton {
+  width: 80px;
+  height: 30px;
+  background-color: #7b57ff;
+  text-align: center;
+  border: none;
+  padding: 0px !important;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px -1px #977ef3;
+}
+@media only screen and (max-width: 37.5em) {
+  #cookiePopup {
+    width: 100%;
+  }
+  .hide {
+    bottom: 2em;
+    right: 0;
+  }
+  .show {
+    right: 0;
+    bottom: 0;
+  }
+}
+    </style>
+
+    
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container px-4 px-lg-5">
+          <a class="logolk navbar-brand" href="../index.html">Lankanbloglk</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
+                  <li class="nav-item dropdown hehe" >
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">My posts</a>
+                    <ul class="dropdown-menu" style="height: fit-content;">
+                      <li><a class="dropdown-item" href="../htmlfiles/Edublog.html">Edublog</a></li>
+                      <li><a class="dropdown-item" href="../htmlfiles/Linkblog.html">Linkblog</a></li>
+                      <li><a class="dropdown-item" href="../htmlfiles/Travelblog.html">Travelblog</a></li>
+                      <li><a class="dropdown-item" href="https://cineblog.lankanblog.lk/index.html">Cineblog</a></li>
+							        <li><a class="dropdown-item" href="../htmlfiles/Codeblog.html">Codeblog</a></li>
+                    </ul>
+                </li> 
+                  <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About Us</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light titlefonthead"><b>Edublog</b></h1>
+        <p class="lead para text-body-secondary">In this page you can easily choose and read blogs regarding education.</p>
+        <p>
+          <a href="myposts.html" class="btn btn-primary my-2 para">To my posts</a>
+          <a href="Linkblog.html" class="btn btn-secondary my-2 para">To linkblog?</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+    
+    <div id="cookiePopup" class="hide">
+      <p class="cookieHeading">We use cookies.</p>
+      <p >
+        We use cookies to ensure that we give you the best experience on our website.<a href="privacy policy.html">Cookie Policy & Privacy.</a>
+      </p>
+      <button id="acceptCookie" class="acceptButton">Allow</button>
+    </div>
+    <!-- Script -->
+    <script src="../js/cookies.js"></script>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm"><a class="nav-link" href="../bloghtmls/Study Tips.html">
+            <img src="../assets/img1/love study.webp" alt="love study" style="width: 100%!important; height: 225px !important;">
+            
+            <div class="card-body">
+              <p class="para card-text" >Study Tips for Advance Level and Ordinary Level</p>
+
+            </div></a>
+          </div>
+        </div> 
+        
+        <div class="col">
+          <div class="card shadow-sm"><a class="nav-link" href="../bloghtmls/G.C.E. Advance Level study tips.html">
+           <img src="../posts/blog(2)/Al exaaam.webp" alt="A/L exam" style="width: 100% !important; height:225px !important;" class="card shadow-sm">
+            <div class="card-body">
+              <p class="para card-text"> Things that Advance Level student must do </p>
+              
+             </div> </a>
+              </div>
+            </div>
+
+        
+        <div class="col">
+          <div class="card shadow-sm"><a class="nav-link" href="../bloghtmls/G.C.E. AL past paper.html">
+            <img src="../assets/img1/pastpapers.webp" alt="past papers" style="width: 100% !important; height:225px;" class="card shadow-sm">
+                <div class="card-body">
+                  <p class="para card-text"> G.C.E. A/L past papers (Math ,Bio ,Chemistry ,ICT ,Phy...)</p>
+                    
+                  </div></a>
+                </div>
+            </div> 
+                
+        
+        <div class="col">
+          <div class="card shadow-sm"><a class="nav-link" href="../bloghtmls/How to make short notes.html">
+            <img src="../assets/img1/short notes.webp" alt="short notes"  style="width: 100% !important; height:225px;" class="card shadow-sm">
+            <div class="card-body">
+              <p class="para card-text">How to write a short note.And here some examples.</p>
+              
+            </div></a>
+          </div>
+        </div> 
+
+        <div class="col">
+          <div class="card shadow-sm"><a class="nav-link" href="../bloghtmls/Unlimited Mortivation.html">
+            <img src="../assets/img1/graduate hats.webp" alt="Unlimited mortivation" style="width: 100% !important; height:225px;" class="card shadow-sm">
+            <div class="card-body">
+              <p class="para card-text">Unlimited mortivation for any exam that you going to face.</p>
+              
+            </div></a>
+          </div>
+        </div> 
+
+        <div class="col">
+          <div class="card shadow-sm"><a class="nav-link" href="../bloghtmls/why stress.html">
+            <img src="../assets/img1/stress1.webp" alt="reduce stress" style="width: 100% !important; height:225px;" class="card shadow-sm">
+            <div class="card-body">
+              <p class="para card-text">Are you scared to Exams? Here is the solution.</p>
+              
+            </div></a>
+          </div>
+        </div> 
+
+        <div class="col">
+          <div class="card shadow-sm"><a class="nav-link" href="../bloghtmls/Thank you Roo & Wijaya Pariganaka.html">
+            <img src="../posts/blog(1)/cover page.webp" alt="Wijaya pariganaka" style="width: 100% !important; height:225px;" class="card shadow-sm">
+            <div class="card-body">
+              <p class="para card-text">Thank you Roo and Wijaya Pariganaka for your service</p>
+              </a>
+            </div>
+          </div>
+        </div> 
+
+
+
+      </div>
+    </div>
+  </div>
+
+</main>
+<footer class="border-top">
+  <div class="container px-4 px-lg-5">
+    <footer class="end" style="margin-top: 50px; margin-bottom: 50px;">
+  <div class="footerboxes">
+    <ul class="footerul"> 
+      <li><a class="footlink" href="../htmlfiles/Edublog.html"><h3>Edublog</h3></a></li>
+      <a class="footlink" href="../bloghtmls/G.C.E. Advance Level study tips.html"><li>A/L Study Tips</li></a>
+      <a class="footlink" href="../bloghtmls/G.C.E. AL past paper.html"><li>A/L Past Papers</li></a>
+      <a class="footlink" href="../bloghtmls/How to make short notes.html"><li>Short Notes</li></a>
+    </ul>
+</div>
+<div class="footerboxes">
+    <ul class="footerul"> 
+      <a class="footlink" href="../htmlfiles/Linkblog.html"><li><h3>Linkblog</h3></li></a>
+      <a class="footlink" href="../bloghtmls/Educational websites.html"><li>Educational Websites</li></a>
+      <a class="footlink" href="../bloghtmls/Top Education Apps in Sri Lanka.html"><li>Educational Apps</li></a>
+      <a class="footlink" href="../bloghtmls/Top Telegram links for student in Sri Lanka.html"><li>Educational Telegram Links</li></a>
+    </ul>
+</div>
+<div class="footerboxes">
+    <ul class="footerul"> 
+      <a class="footlink" href="../htmlfiles/Travelblog.html"><li><h3>Travelblog</h3></li></a>
+        <a class="footlink" href="../bloghtmls/Narangala mountain.html"><li>Narangala Hiking</li></a>
+        <a class="footlink" href="../bloghtmls/knukels.html"><li>Knukels Hiking</li></a> 
+        <a class="footlink" href="../bloghtmls/Explore Colombo.html"><li>Explore Colombo</li></a>     
+    </ul>
+</div>
+<div class="footerboxes">
+  <ul class="footerul"> 
+    <a class="footlink" href="../htmlfiles/Codeblog.html"><li><h3>Codeblog</h3></li></a>
+      <a class="footlink" href="../codeblog/catfood.html"><li>Cat food</li></a>
+      <a class="footlink" href="../codeblog/automatictap.html"><li>Automatic Tap</li></a> 
+      <a class="footlink" href="../codeblog/lifesolution.html"><li>Lifesolution software</li></a>     
+  </ul>
+</div>
+</footer>
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              
+            <div class="small text-center text-muted fst-italic" >Copyright &copy; Lankanblog 2023-2024 <a href="privacy policy.html"> privacy policy</a></div>
+          </div>
+          
+      </div>
+      <br>
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
